@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding : 안쪽 여백</title>
+<style type="text/css">
+	div.ex1
+	{
+		width: 300px;
+		background-color: yellow;
+	}
+	/* 300px + 50px 해서 width가 350이 되어있음*/
+	div.ex2
+	{
+		width: 300px;
+		padding: 25px;
+		background-color: lightblue;
+	}
+	/* 전체 크기를 유지하면서 안쪽 여백 주기*/
+	div.ex3
+	{
+		width: 300px;
+		padding: 25px;
+		background-color: lightblue;
+		box-sizing: border-box;
+		
+	}
+</style>
+</head>
+<body>
+	<!-- 처리 방식은 margin 과 같음 -->
+	<h2>Padding and element width</h2>
+
+	<div class="ex1">This div is 300px wide.</div>
+	<br>
+
+	<div class="ex2">The width of this div is 350px, 
+	even though it is defined as 300px in the CSS.</div>
+	<br>
+	
+	<div class="ex3">The width of this div is 350px, 
+	even though it is defined as 300px in the CSS.
+	box-sizing: border-box property add.</div>
+</body>
+</html>
