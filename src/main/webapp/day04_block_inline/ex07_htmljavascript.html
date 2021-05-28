@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript</title>
+<script type="text/javascript">
+	/* 자바 스크립트로 스타일 변경 가능 .style. */
+	/* 속성을 변경 .속성=""; */
+	function p_off() 
+	{
+		document.getElementById("img1").src="../images/dark.gif";
+	}
+	function p_on() 
+	{
+		document.getElementById("img1").src="../images/light.gif";
+	}
+	
+	function p_off2() 
+	{
+		document.getElementById("img2").src="../images/dark.gif";
+	}
+	function p_on2() 
+	{
+		document.getElementById("img2").src="../images/light.gif";
+	}
+	function test01() 
+	{
+		document.getElementById("d1").style.fontSize="25px";
+		document.getElementById("d1").style.color="tomato";
+		document.getElementById("d1").style.backgroundColor="yellow";
+	}
+	function test02() 
+	{
+		document.getElementById("d1").style.fontSize="20px";
+		document.getElementById("d1").style.color="black";
+		document.getElementById("d1").style.backgroundColor="white";
+	}
+</script>
+</head>
+<body>
+	<p><img id="img1" alt="" src="../images/dark.gif"></p>
+	<button onclick="p_off()">끄기</button>
+	<button onclick="p_on()">켜기</button><hr>
+	
+	<!-- onmouseover : 해당 영역에 마우스포이트가 있을때, out : 벗어났을때 -->
+	<span onmouseover="p_on2()" onmouseout="p_off2()">
+	<img id="img2" alt="" src="../images/dark.gif"></span><hr>
+	
+	<span id="d1" onmouseover="test01()" onmouseout="test02()">
+	 자바스크립트를 이용한 스타일 변경 </span>
+</body>
+</html>

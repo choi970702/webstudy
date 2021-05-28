@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>video, audio</title>
+</head>
+<body>
+	<!--  
+		속성 : width, hright, controls, autoplay, muted(음소거)
+	-->
+	<video src="../multi/video.mp4" controls="controls"></video><hr>
+	
+	<!-- 크롬은 자동실행을 위해서 muted(음소거)를 넣어야 된다. -->
+	<video src="../multi/video.mp4" autoplay="autoplay" muted="muted"></video><hr>
+	
+	<video controls="controls">
+		<source src="../multi/video.mp4">
+		<!-- 위에 소스가 실행되지 않을때 아래 소스가 실행된다. -->
+		<source src="../multi/video.ogg">
+	</video><hr>
+	
+	<audio src="../multi/All.mp3" controls="controls"></audio><hr>
+	
+	<!-- 크롬은 자동실행을 위해서 muted(음소거)를 넣어야 된다. -->
+	<audio src="../multi/All.mp3" autoplay muted controls></audio><hr>
+</body>
+</html>

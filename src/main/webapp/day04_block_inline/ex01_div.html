@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Block & Inline</title>
+</head>
+<body>
+	<!--  
+	block : 항상 새 줄에 시작해서 전체 너비를 차지한다.
+		<div>, <p>, <pre>, <h1>~<h5>, <table>, <ul>, <ol>, <li>, <hr>, 
+		(<header>, <section>, <nav>, <article>, <aside> html5구조=시멘틱스태그=의미있는 태그),
+		<form>, <fieldset>
+	Inline : 필요한 만큼만 너비를 차지한다.
+		<span>, <a>, <br>, <img>, <button>, <b>, <i>, <strong>, <sub>, <sup>,
+		<input>, <script>, <select> 
+	
+	-->
+	<!-- div : 다른 요소(Element=태그) 포함하는 컨테이너 역할을 한다. 
+			또는 영역을 나누는 역할을 한다.
+	-->
+	<div style="border: 1px solid green;">대표적인 블록 레벨</div>
+	<span style="border: 1px solid green;">대표적인 인라인 레벨</span>
+	<div style="background-color: pink; color: white; padding: 5px; text-align: center;">
+		<h2> 여기는 div 영역안 입니다.</h2>
+		<p>특히 NRI는 도쿄올림픽 이후 코로나19 확산으로 긴급사태 선언을 발령할 경우 
+		"경제적 손실이 (올림픽 개최 효과보다) 커진다"고 평가했다.</p>
+		<p>앞서 미국 국무부는 전날 일본에 대한 여행권고 수준을 3단계인 '여행재고'에서 4단계인 '여행금지'로 높였다. 
+		코로나19 확산이 이유다. 미국 CDC(질병통제예방센터) 역시 일본에 대한 여행경보를 4단계로 상향했다.</p>
+	</div>
+	<div style="width: 500px; background-color: lightgreen; color: white; 
+	padding: 5px; text-align: center;">
+		<h2> 여기는 div 영역안 입니다.</h2>
+		<p>특히 NRI는 도쿄올림픽 이후 코로나19 확산으로 긴급사태 선언을 발령할 경우 
+		"경제적 손실이 (올림픽 개최 효과보다) 커진다"고 평가했다.</p>
+		<p>앞서 미국 국무부는 전날 일본에 대한 여행권고 수준을 3단계인 '여행재고'에서 4단계인 '여행금지'로 높였다. 
+		코로나19 확산이 이유다. 미국 CDC(질병통제예방센터) 역시 일본에 대한 여행경보를 4단계로 상향했다.</p>
+	</div>
+	<div style="width: 500px; background-color: lightgray; color: white; 
+	padding: 5px; text-align: center; margin: auto;">
+		<h2> 여기는 div 영역안 입니다.</h2>
+		<img alt="" src="../images/workplace.jpg">
+	</div>
+	<img alt="" src="../images/workplace.jpg" style="margin-left: 240px;">
+</body>
+</html>
